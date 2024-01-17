@@ -1,0 +1,88 @@
+
+Типи даних
+існує 7 типів примітивів: string, number, bigint, boolean, symbol, null та undefined
+str.toUpperCase(),
+
+toFixed(n)
+let billion = 1_000_000_000;
+let billion = 1e9; let mcs = 1e-6;
+let num = 255; alert( num.toString(2) );   // 11111111
+Math.floor Math.ceil Math.round
+alert( 1e500 ); // Infinity
+
+isNaN(value) перетворює свій аргумент на число, а потім перевіряє його на NaN
+alert( isNaN(NaN) ); // true
+alert( isNaN("str") ); // true
+Number.isNaN(value) перевіряє, чи належить його аргумент до типу number, і якщо так, перевіряє його на NaN
+isFinite(value) перетворює свій аргумент на число, а потім перевіряє, чи не є NaN/Infinity/-Infinity
+alert( isFinite("15") ); // true
+alert( isFinite("str") ); // false, тому що це спеціальне значення: NaN
+alert( parseInt('100px') ); // 100
+alert( parseFloat('12.5em') ); // 12.5
+Math.random()
+Math.pow(2, 10)
+Math.max
+Math.min
+
+string
+""  ''  ``
+\n \t
+str.length
+str.charAt(0)
+str.at(-1) 
+.toUpperCase() toLowerCase()
+str.indexOf
+includes, startsWith, endsWith
+str.slice(start [, end])       str.substring(start [, end])      str.substr(start [, length])
+str.codePointAt(pos)      String.fromCodePoint(code)
+'Österreich'.localeCompare('Zealand') ); // -1
+str.trim() – видаляє (“обрізає”) пробіли з початку та кінця рядка.
+str.repeat(n) – повторює рядок n разів.
+
+
+
+Масиви
+let arr = new Array();
+let arr = [];
+fruits.length
+fruits.at(-1)
+Методи pop/push, shift/unshift
+toString
+splice()
+
+const startMap = performance.now(); 
+s.padStart
+arr3 = arr.concat(arr2);
+slice
+arr.forEach 
+indexOf/lastIndexOf та includes
+find і findIndex/findLastIndex    ///// let user = users.find(item => item.id == 1);
+filter
+
+  // Приклад використання:
+  let users = [
+    {id: 1, name: "John", age: 10},
+    {id: 2, name: "Pete", age: 5},
+    {id: 3, name: "Mary", age: 20},
+    {id: 3, name: "Bob", age: 1}
+  ];
+ users = users.sort((a,b) => a.age -b.age);
+  users = users.sort((a,b) => a.name.localeCompare(b.name));
+
+reverse
+split та join
+reduce/reduceRight
+let result = arr.reduce((sum, current) => sum + current, 0);
+arr.reduceRight
+alert(Array.isArray([])); // true
+function arraysEqual(arr1, arr2) {
+  return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
+}
+
+arr.slice().sort(); копіює і сортує
+
+    
+
+
+
+

@@ -1,27 +1,15 @@
 "use strict"
-// Створіть об’єкт calculator з трьома методами:
+let str = "Hello this is and it is the reboot";
+let arr = [];
+arr = str.split(' ');
 
-// read() запитує два значення та зберігає їх як властивості об’єкта з іменами a та b відповідно.
-// sum() повертає суму збережених значень.
-// mul() множить збережені значення і повертає результат.
-// let calculator = {
-//   // ... ваш код ...
-// };
+let rez = [];
 
-// calculator.read();
-// alert( calculator.sum() );
-// alert( calculator.mul() );
+arr.map((value) => {
+    rez.push(value[0].toUpperCase() + value.slice(1));
+});
 
-let calculator = {
-    read() {
-        this.a = +prompt('Enter the a');
-        this.b = +prompt('Enter th b');
-    },
+str = rez.join(' ');
 
-    sum() { return this.a + this.b; },
-    mul() { return this.a * this.b; }
-};
 
-calculator.read();
-alert(calculator.sum());
-alert(calculator.mul());
+console.log(rez[0].localeCompare(rez[1]));
